@@ -15,6 +15,10 @@ public class NumberWizard : MonoBehaviour {
 	}
 	// Use this for initialization
 	void Startgame () {
+		max = 1000;
+		min = 1;
+		guess = 500;
+
 		print ("==============================================================");
 		print ("=============================================================");
 		print ("============================================================");
@@ -31,11 +35,9 @@ public class NumberWizard : MonoBehaviour {
 
         print ("Is the number higher or lower than " + guess + " ?");
         print ("Up arrow = higher, down = lower, return = equal");
-		max = 1000;
-		min = 1;
-		guess = 500;
 
 	}
+
 	void NextGuess () {
 		guess = (max + min) / 2;
 		print ("Is the number higher or lower than " + guess + " ?");
